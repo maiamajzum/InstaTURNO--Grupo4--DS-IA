@@ -21,4 +21,4 @@ Si el usuario decide salir al principio, su selección termina el proceso.
 *Almacenamiento de Datos:
 El código hace uso de variables para almacenar datos personales del usuario, como el apellido y el DNI, para la gestión de turnos. Además, los turnos se almacenan en una lista que incluye el ID del turno, el apellido del paciente, el DNI y la especialidad seleccionada.
 
-Este análisis refleja las funcionalidades implementadas en el código, incluyendo la creación, consulta y eliminación de turnos, así como el manejo de datos personales del usuario y el flujo de interacción del sistema.
+El código se implementara en base a este análisis, incluyendo la creación, consulta y eliminación de turnos, así como el manejo de datos personales del usuario y el flujo de interacción del sistema.
