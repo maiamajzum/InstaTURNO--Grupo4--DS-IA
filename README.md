@@ -76,7 +76,7 @@ Las principales funcionalidades que incluye son:
     - _DNI_: 39448604
  
 
-# Descripcion archivos en Main-Proyect:
+# Descripcion archivos en APLICACION:
 
 - **menu.py**
     - Este archivo Python implementa un menú interactivo para la gestión de turnos médicos. Permite al usuario crear, consultar y 
@@ -98,7 +98,7 @@ Las principales funcionalidades que incluye son:
       coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
       mensaje indicando que el turno no fue encontrado.
 
-# Descripcion archivos en Base de Datos:
+# Descripcion archivos en BD:
 
 - **Turnero_script.sql**
     - Este archivo es un script SQL que contiene comandos para crear y modificar la estructura de la base de datos "Turnero". definiendo 
