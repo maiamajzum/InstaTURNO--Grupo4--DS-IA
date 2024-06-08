@@ -76,7 +76,7 @@ Las principales funcionalidades que incluye son:
     - _DNI_: 39448604
  
 
-# Descripcion archivos python:
+# Descripcion archivos en Main-Proyect:
 
 - **menu.py**
     - Este archivo Python implementa un menú interactivo para la gestión de turnos médicos. Permite al usuario crear, consultar y 
@@ -97,6 +97,25 @@ Las principales funcionalidades que incluye son:
     - La función eliminar_turno permite al usuario ingresar el código de un turno para eliminarlo de una lista de turnos. Si el código 
       coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
       mensaje indicando que el turno no fue encontrado.
+
+# Descripcion archivos en Main-Proyect:
+
+- **Turnero_script.sql**
+    - Este archivo es un script SQL que contiene comandos para crear y modificar la estructura de la base de datos "Turnero". definiendo 
+      la estructura mediante la creación de las tablas Paciente, Departamento, Especialidad, Turno, Horario, Medico y 
+      Medico_has_Especialidad. Establece relaciones entre estas tablas utilizando claves primarias y foráneas para garantizar la 
+      integridad de los datos.
+
+- **TurneroMER.mwb**
+    - El archivo MWB contiene el diseño y la estructura de la base de datos "Turnero", incluyendo tablas, relaciones, índices y otros 
+      elementos, en un formato específico de MySQL Workbench.
+
+- **TurneroMER.png**
+    - Este archivo corresponde a la imagen del diagrama de la base de datos "Turnero". En la imagen podemos encontrar representaciones 
+      visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la estructura de la 
+      base de datos. 
+
+
 
 # Requisitos para el correcto funcionamiento:
 
