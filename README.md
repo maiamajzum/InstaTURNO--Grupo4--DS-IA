@@ -73,4 +73,28 @@ Las principales funcionalidades que incluye son:
 - **PAREDES, JORGE EDUARDO**
     - _Usuario GitHub_: [GeorgiWalls](https://github.com/GeorgiWalls)
     - _Mail_: jorgeparedes0501@gmail.com
-    - _DNI_: 39448604 
+    - _DNI_: 39448604
+ 
+
+# Descripcion archivos python:
+
+- **menu.py**
+    - Este archivo Python implementa un menú interactivo para la gestión de turnos médicos. Permite al usuario crear, consultar y 
+      eliminar turnos, así como salir del programa.
+
+- **crear_turno.py**
+    - La función crear_turno permite al usuario seleccionar un departamento médico para programar un nuevo turno. Genera un código de 
+      turno aleatorio y lo asocia con el nombre del paciente, su DNI y el departamento seleccionado. Luego, agrega esta información a 
+      una lista de turnos y muestra un mensaje de confirmación con los detalles del turno y el código asignado.
+
+- **consultar_turno.py**
+    - La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
+      turno, muestra los detalles del paciente y el departamento del turno. Si no lo encuentra, muestra un mensaje indicando que el 
+      turno no fue encontrado.
+
+
+- **eliminar_turno.py**
+    - La función eliminar_turno permite al usuario ingresar el código de un turno para eliminarlo de una lista de turnos. Si el código 
+      coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
+      mensaje indicando que el turno no fue encontrado.
+
