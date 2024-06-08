@@ -98,3 +98,9 @@ Las principales funcionalidades que incluye son:
       coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
       mensaje indicando que el turno no fue encontrado.
 
+# Requisitos para el correcto funcionamiento:
+
+- 1
+- 2
+- 3
+- 4
