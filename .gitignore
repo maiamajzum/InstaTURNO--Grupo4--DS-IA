@@ -1,6 +1,7 @@
 # Ignorar la carpeta de configuración de IntelliJ IDEA de las posibles rutas donde se podría encontrar
 .idea/
 APLICACION/.idea/
+APLICACION/__pycache__/
 BD/.idea/
 EVIDENCIA2/.idea/
 
@@ -9,3 +10,5 @@ EVIDENCIA2/.idea/
 APLICACION/.vs/
 BD/.vs/
 EVIDENCIA2/.vs/
+
+

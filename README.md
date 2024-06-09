@@ -75,8 +75,35 @@ Las principales funcionalidades que incluye son:
     - _Mail_: jorgeparedes0501@gmail.com
     - _DNI_: 39448604
  
+---
 
-# Descripcion archivos en APLICACION:
+## Estructura de Carpetas del Proyecto
+
+```
+Proyecto-Web-Standard/
+|
+├── APLICACION/
+|   ├── consultar_turno.py
+|   ├── crear_turno.py
+|   ├── eliminar_turno.py
+|   └── menu.py
+├── BD/
+|   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
+|   ├── Turnero_Scripts_Poblado_Tablas.sql
+|   ├── TurneroMER.mwb
+|   └── TurneroMER.png
+├── Carpeta-Temporal/
+|   └── *
+├── EVIDENCIA 2/
+|   ├── Modelo Entidad-Relacion.jpg
+|   └── Turnero.psc
+├── .gitignore
+├── Links a los repositorios personales con .txt
+├── README.md
+└── Turnero - Analisis.txt
+```
+
+### Descripcion archivos en APLICACION:
 
 - **menu.py**
     - Este archivo Python implementa un menú interactivo para la gestión de turnos médicos. Permite al usuario crear, consultar y 
@@ -98,7 +125,7 @@ Las principales funcionalidades que incluye son:
       coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
       mensaje indicando que el turno no fue encontrado.
 
-# Descripcion archivos en BD (Base de Datos):
+### Descripcion archivos en BD (Base de Datos):
 
 - **Turnero_Scripts_Creacion_Esquema_Tablas.sql**
     - Este archivo es un script SQL que contiene comandos para crear y modificar la estructura de la base de datos "Turnero". definiendo 
@@ -118,11 +145,33 @@ Las principales funcionalidades que incluye son:
       visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la estructura de la 
       base de datos. 
 
+---
 
+## Pre-Requisitos para ejecución local de `InstaTURNO`:
 
-# Requisitos para el correcto funcionamiento:
+### 1. Instalación de `Python`
 
-- 1
-- 2
-- 3
-- 4
+- Ingresar a la sección de [Descargas de Python](https://www.python.org/downloads/) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
+  - [Windows](https://www.python.org/downloads/windows/)
+  - [Linux/UNIX](https://www.python.org/downloads/source/)
+  - [MacOS](https://www.python.org/downloads/macos/)
+  - [Other](https://www.python.org/download/other/)
+- _NOTA: en caso de necesitar contar con alguna versión específica de Python puede buscarla [aquí](https://www.python.org/download/pre-releases/)._
+
+### 2. Instalación de `MySQL Workbench 8.0 CE`
+
+- Ingresar a la sección de [Descargas de MySQL Workbench](https://dev.mysql.com/downloads/workbench/) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
+    - Microsoft Windows
+    - Ubuntu Linux
+    - Redhat Enterprise Linux / Oracle Linux
+    - Fedora
+    - MacOS
+    - Source Code
+- _NOTA: si bien el sitio de `MySQL` va a detectar el sistema operativo y arquitectura con la que contamos, en caso de que no esté sucediendo debe seleccionar desde el menú desplegable `Select Operating System`_
+
+### 3. Instalación de `Visual Studio Code`
+
+- Ingresar a la sección de [Descargas de Visual Studio Code](https://code.visualstudio.com/download) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
+    - Windows
+    - Ubuntu/LINUX
+    - MacOS
