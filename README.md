@@ -100,11 +100,14 @@ Las principales funcionalidades que incluye son:
 
 # Descripcion archivos en BD (Base de Datos):
 
-- **Turnero_script.sql**
+- **Turnero_Scripts_Creacion_Esquema_Tablas.sql**
     - Este archivo es un script SQL que contiene comandos para crear y modificar la estructura de la base de datos "Turnero". definiendo 
       la estructura mediante la creación de las tablas Paciente, Departamento, Especialidad, Turno, Horario, Medico y 
       Medico_has_Especialidad. Establece relaciones entre estas tablas utilizando claves primarias y foráneas para garantizar la 
       integridad de los datos.
+
+- **Turnero_Scripts_Poblado_Tablas.sql**
+    - Este archivo es un script SQL que contiene las ejecuciones realizadas inicialmente para poblar las diferentes tablas de la base de datos.
 
 - **TurneroMER.mwb**
     - El archivo MWB contiene el diseño y la estructura de la base de datos "Turnero", incluyendo tablas, relaciones, índices y otros 
