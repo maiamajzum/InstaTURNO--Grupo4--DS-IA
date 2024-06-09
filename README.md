@@ -83,22 +83,22 @@ Las principales funcionalidades que incluye son:
       eliminar turnos, así como salir del programa.
 
 - **crear_turno.py**
-    - La función crear_turno permite al usuario seleccionar un departamento médico para programar un nuevo turno. Genera un código de 
+    - La función crear_turno permite al usuario programar un nuevo turno seleccionando un departamento médico. Genera un código de 
       turno aleatorio y lo asocia con el nombre del paciente, su DNI y el departamento seleccionado. Luego, agrega esta información a 
       una lista de turnos y muestra un mensaje de confirmación con los detalles del turno y el código asignado.
 
 - **consultar_turno.py**
-    - La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
+    La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
       turno, muestra los detalles del paciente y el departamento del turno. Si no lo encuentra, muestra un mensaje indicando que el 
       turno no fue encontrado.
 
 
 - **eliminar_turno.py**
-    - La función eliminar_turno permite al usuario ingresar el código de un turno para eliminarlo de una lista de turnos. Si el código 
+    - La función eliminar_turno permite al usuario eliminar un turno de la lista utilizando su código. Si el código 
       coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
       mensaje indicando que el turno no fue encontrado.
 
-# Descripcion archivos en BD:
+# Descripcion archivos en BD (Base de Datos):
 
 - **Turnero_script.sql**
     - Este archivo es un script SQL que contiene comandos para crear y modificar la estructura de la base de datos "Turnero". definiendo 
@@ -111,7 +111,7 @@ Las principales funcionalidades que incluye son:
       elementos, en un formato específico de MySQL Workbench.
 
 - **TurneroMER.png**
-    - Este archivo corresponde a la imagen del diagrama de la base de datos "Turnero". En la imagen podemos encontrar representaciones 
+    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar representaciones 
       visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la estructura de la 
       base de datos. 
 
