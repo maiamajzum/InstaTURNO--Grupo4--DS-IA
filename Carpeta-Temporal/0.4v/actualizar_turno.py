@@ -1,6 +1,6 @@
 from conectar_base_datos import conectar_base_datos
 
-def actualizar_turno(departamentos):
+def actualizar_turno():
     conn = conectar_base_datos()
     cursor = conn.cursor()
 
@@ -15,12 +15,12 @@ def actualizar_turno(departamentos):
             break
         except ValueError:
             print("Código no válido. Por favor, ingrese un número.")
-    
-    cursor.execute('SELECT apellido, dni, departamento, codigo FROM turnos WHERE codigo = %s', (c,))
+
+    cursor.execute("SELECT t.id_turno, CONCAT(p.Nombre, ' ', p.Apellido) AS Nombre_Paciente, e.Nombre AS Nombre_Especialidad FROM Turno t INNER JOIN Paciente p ON t.Paciente_id_paciente = p.id_paciente INNER JOIN Especialidad e ON t.Especialidad_id_especialidad = e.id_especialidad WHERE t.id_turno = %s;", (c,))
     turno = cursor.fetchone()
 
     if turno:
-        print(f"El turno seleccionado corresponde al paciente {turno[0]}, DNI: {turno[1]} para el área de {turno[2]}")
+        print(f"El turno seleccionado corresponde al paciente {turno[1]}, para el área de {turno[2]}")
         print("¿Qué desea modificar?")
         print('1. Paciente.')
         print('2. Área.')
@@ -36,32 +36,53 @@ def actualizar_turno(departamentos):
                 print("Por favor, ingrese un número.")
 
         if opcion == 1:
-            nuevo_nombre = input('Ingrese el nuevo nombre: ')
-            nuevo_dni = input('Ingrese su nuevo DNI:')
-            cursor.execute('UPDATE turnos SET apellido = %s, dni = %s WHERE codigo = %s', (nuevo_nombre,nuevo_dni, c))
-            conn.commit()
-            print(f'El paciente ha sido actualizado a {nuevo_nombre}, DNI: {nuevo_dni}')
+            nuevo_dni = input('Ingrese el nuevo DNI:')
+            cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s', (nuevo_dni,))
+            h = cursor.fetchone()
 
+            if h:
+                cursor.execute('UPDATE Turno SET Paciente_id_paciente = %s WHERE id_turno = %s', (h[0], c))
+                conn.commit()
+                print('Se ha actualizado el turno')
+            else:
+                print('Paciente no encontrado en el Sistema.')
+                nuevo_nombre = input('Ingrese el nuevo nombre: ')
+                nuevo_apellido = input('Ingrese el nuevo apellido: ')
+                cursor.execute('INSERT INTO Paciente (Nombre, Apellido, DNI) VALUES (%s, %s, %s)', (nuevo_nombre, nuevo_apellido, nuevo_dni))
+                conn.commit()
+                cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s', (nuevo_dni,))
+                i = cursor.fetchone()
+                cursor.execute('UPDATE Turno SET Paciente_id_paciente = %s WHERE id_turno = %s', (i[0], c))
+                conn.commit()
+                print('Se ha actualizado el turno')
+            
         elif opcion == 2:
+            cursor.execute('SELECT id_especialidad, Nombre FROM Especialidad')
+            especialidades = cursor.fetchall()
             print("Seleccione una nueva Área:")
-            for i, dept in enumerate(departamentos, start=1):
-                print(f'{i}. {dept}')
+            for idx, esp in enumerate(especialidades, start=1):
+                print(f'{idx}. {esp[1]}')
 
             while True:
                 try:
                     f = int(input())
-                    if 1 <= f <= len(departamentos):
-                        nueva_area = departamentos[f-1]
+                    if 1 <= f <= len(especialidades):
+                        nueva_area = especialidades[f-1][1]
                         break
                     else:
                         print("Por favor, ingrese un número válido.")
                 except ValueError:
                     print("Por favor, ingrese un número.")
 
-            # nueva_area = input('Ingrese la nueva área: ')
-            cursor.execute('UPDATE turnos SET departamento = %s WHERE codigo = %s', (nueva_area, c))
-            conn.commit()
-            print(f'El área ha sido actualizada a {nueva_area}')
+            cursor.execute("SELECT id_especialidad FROM Especialidad WHERE Nombre = %s", (nueva_area,))
+            especialidad = cursor.fetchone()
+
+            if especialidad:
+                cursor.execute('UPDATE Turno SET Especialidad_id_especialidad = %s WHERE id_turno = %s', (especialidad[0], c))
+                conn.commit()
+                print(f'El área ha sido actualizada a {nueva_area}')
+            else:
+                print(f'No se encontró el área {nueva_area}')
 
         elif opcion == 0:
             print("Adios.")

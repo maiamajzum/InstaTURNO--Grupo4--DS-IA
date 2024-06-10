@@ -1,4 +1,3 @@
-import random
 from conectar_base_datos import conectar_base_datos
 from tabulate import tabulate
 

@@ -11,7 +11,7 @@ def eliminar_turno():
         except ValueError:
             print("Código no válido. Por favor, ingrese un número.")
 
-    cursor.execute('DELETE FROM turnos WHERE codigo = %s', (c,))
+    cursor.execute('DELETE FROM Turno WHERE id_turno = %s', (c,))
     conn.commit()
 
     if cursor.rowcount > 0:

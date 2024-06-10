@@ -1,23 +1,18 @@
-# import sys
-# print(sys.executable)
-# print(sys.path)
-
-
 from crear_turno import crear_turno
 from consultar_turno import consultar_turno
 from eliminar_turno import eliminar_turno
 from actualizar_turno import actualizar_turno
 
 def menu_inicio():
-    E1 = 'Oftalmología'
-    E2 = 'Laboratorio'
-    E3 = 'Traumatología'
-    E4 = 'Psicología'
-    E5 = 'Cardiología'
-    E6 = 'Neurología'
-    E7 = 'Pediatría'
-    E8 = 'Dermatología'
-    departamentos = [E1, E2, E3, E4, E5, E6, E7, E8]
+    # E1 = 'Oftalmología'
+    # E2 = 'Laboratorio'
+    # E3 = 'Traumatología'
+    # E4 = 'Psicología'
+    # E5 = 'Cardiología'
+    # E6 = 'Neurología'
+    # E7 = 'Pediatría'
+    # E8 = 'Dermatología'
+    # departamentos = [E1, E2, E3, E4, E5, E6, E7, E8]
 
     print('- Bienvenido al Sistema de Gestión de Turnos -')
 
@@ -40,16 +35,12 @@ def menu_inicio():
                 print("Por favor, ingrese un número.")
 
 
-
-        # user_a = input('Ingrese su Apellido: ')
-        # user_dni = input('Ingrese su DNI: ')
-
         if user_opt == 1:
             crear_turno()
         elif user_opt == 2:
             consultar_turno()
         elif user_opt == 3:
-            actualizar_turno(departamentos)
+            actualizar_turno()
         elif user_opt == 4:
             eliminar_turno()
 
@@ -70,6 +61,6 @@ def menu_inicio():
             print('Hasta luego, gracias por confiar en InstaTurno.')
             break
 
-# Ejecutar
+# Main
 if __name__ == "__main__":
     menu_inicio()
