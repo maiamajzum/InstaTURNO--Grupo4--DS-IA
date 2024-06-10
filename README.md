@@ -90,6 +90,7 @@ Proyecto-Web-Standard/
 ├── BD/
 |   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
 |   ├── Turnero_Scripts_Poblado_Tablas.sql
+|   ├── Turnero_Scripts_querys.sql
 |   ├── TurneroMER.mwb
 |   └── TurneroMER.png
 ├── Carpeta-Temporal/
