@@ -9,7 +9,7 @@ SELECT * FROM turno WHERE Especialidad_id_especialidad = 1 AND hora BETWEEN 10 A
 SELECT * -- Consulta de una sola tabla con WHERE utilizando LIMIT
 FROM medico
 WHERE Nombre LIKE 'A%'
-LIMIT 1;
+LIMIT 3;
 
 
 SELECT paciente.Nombre -- Consulta de mas de una tabla con INNER JOIN
