@@ -75,32 +75,60 @@ Las principales funcionalidades que incluye son:
     - _Mail_: jorgeparedes0501@gmail.com
     - _DNI_: 39448604
  
+---
 
-# Descripcion archivos en APLICACION:
+## Estructura de Carpetas del Proyecto
+
+```
+Proyecto-Web-Standard/
+|
+├── APLICACION/
+|   ├── consultar_turno.py
+|   ├── crear_turno.py
+|   ├── eliminar_turno.py
+|   └── menu.py
+├── BD/
+|   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
+|   ├── Turnero_Scripts_Poblado_Tablas.sql
+|   ├── Turnero_Scripts_querys.sql
+|   ├── TurneroMER.mwb
+|   └── TurneroMER.png
+├── Carpeta-Temporal/
+|   └── *
+├── EVIDENCIA 2/
+|   ├── Modelo Entidad-Relacion.jpg
+|   └── Turnero.psc
+├── .gitignore
+├── Links a los repositorios personales con .txt
+├── README.md
+└── Turnero - Analisis.txt
+```
+
+### Descripcion archivos en APLICACION:
 
 - **menu.py**
     - Este archivo Python implementa un menú interactivo para la gestión de turnos médicos. Permite al usuario crear, consultar y 
       eliminar turnos, así como salir del programa.
 
 - **crear_turno.py**
-    - La función crear_turno permite al usuario seleccionar un departamento médico para programar un nuevo turno. Genera un código de 
+    - La función crear_turno permite al usuario programar un nuevo turno seleccionando un departamento médico. Genera un código de 
       turno aleatorio y lo asocia con el nombre del paciente, su DNI y el departamento seleccionado. Luego, agrega esta información a 
       una lista de turnos y muestra un mensaje de confirmación con los detalles del turno y el código asignado.
 
 - **consultar_turno.py**
-    - La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
+    La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
       turno, muestra los detalles del paciente y el departamento del turno. Si no lo encuentra, muestra un mensaje indicando que el 
       turno no fue encontrado.
 
 
 - **eliminar_turno.py**
-    - La función eliminar_turno permite al usuario ingresar el código de un turno para eliminarlo de una lista de turnos. Si el código 
+    - La función eliminar_turno permite al usuario eliminar un turno de la lista utilizando su código. Si el código 
       coincide con algún turno en la lista, ese turno se elimina. Si no se encuentra ningún turno con el código ingresado, se muestra un 
       mensaje indicando que el turno no fue encontrado.
 
-# Descripcion archivos en BD:
+### Descripcion archivos en BD (Base de Datos):
 
-- **Turnero_script.sql**
+- **Turnero_Scripts_Creacion_Esquema_Tablas.sql**
     - Este archivo es un script SQL que contiene comandos para crear y modificar la estructura de la base de datos "Turnero". definiendo 
       la estructura mediante la creación de las tablas Paciente, Departamento, Especialidad, Turno, Horario, Medico y 
       Medico_has_Especialidad. Establece relaciones entre estas tablas utilizando claves primarias y foráneas para garantizar la 
@@ -111,15 +139,44 @@ Las principales funcionalidades que incluye son:
       elementos, en un formato específico de MySQL Workbench.
 
 - **TurneroMER.png**
-    - Este archivo corresponde a la imagen del diagrama de la base de datos "Turnero". En la imagen podemos encontrar representaciones 
-      visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la estructura de la 
-      base de datos. 
+    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar 
+      representaciones visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la 
+      estructura de la base de datos.
 
+- **Turnero_Scripts_Poblado_Tablas.sql**
+    - Este archivo es un script SQL que contiene las ejecuciones realizadas inicialmente para poblar las diferentes tablas de la base de 
+      datos.
+      
+- **Turnero_Scripts_querys.sql**
+    - Este archivo es un script SQL que contiene las diferentes consultas realizadas para visualizar información de las tablas.
 
+---
 
-# Requisitos para el correcto funcionamiento:
+## Pre-Requisitos para ejecución local de `InstaTURNO`:
 
-- 1
-- 2
-- 3
-- 4
+### 1. Instalación de `Python`
+
+- Ingresar a la sección de [Descargas de Python](https://www.python.org/downloads/) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
+  - [Windows](https://www.python.org/downloads/windows/)
+  - [Linux/UNIX](https://www.python.org/downloads/source/)
+  - [MacOS](https://www.python.org/downloads/macos/)
+  - [Other](https://www.python.org/download/other/)
+- _NOTA: en caso de necesitar contar con alguna versión específica de Python puede buscarla [aquí](https://www.python.org/download/pre-releases/)._
+
+### 2. Instalación de `MySQL Workbench 8.0 CE`
+
+- Ingresar a la sección de [Descargas de MySQL Workbench](https://dev.mysql.com/downloads/workbench/) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
+    - Microsoft Windows
+    - Ubuntu Linux
+    - Redhat Enterprise Linux / Oracle Linux
+    - Fedora
+    - MacOS
+    - Source Code
+- _NOTA: si bien el sitio de `MySQL` va a detectar el sistema operativo y arquitectura con la que contamos, en caso de que no esté sucediendo debe seleccionar desde el menú desplegable `Select Operating System`_
+
+### 3. Instalación de `Visual Studio Code`
+
+- Ingresar a la sección de [Descargas de Visual Studio Code](https://code.visualstudio.com/download) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
+    - Windows
+    - Ubuntu/LINUX
+    - MacOS

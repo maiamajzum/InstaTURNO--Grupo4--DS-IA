@@ -1,0 +1,14 @@
+# Ignorar la carpeta de configuración de IntelliJ IDEA de las posibles rutas donde se podría encontrar
+.idea/
+APLICACION/.idea/
+APLICACION/__pycache__/
+BD/.idea/
+EVIDENCIA2/.idea/
+
+# Ignorar la carpeta de configuración de Visual Studio de las posibles rutas donde se podría encontrar
+.vs/
+APLICACION/.vs/
+BD/.vs/
+EVIDENCIA2/.vs/
+
+
