@@ -60,10 +60,10 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `Turnero`.`Turno` (
   `id_turno` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATE NOT NULL,
-  `hora` INT NOT NULL,
+  `hora` TIME NOT NULL,
   `Paciente_id_paciente` INT NOT NULL,
   `Especialidad_id_especialidad` INT NOT NULL,
-  PRIMARY KEY (`id_turno`, `Paciente_id_paciente`, `Especialidad_id_especialidad`),
+  PRIMARY KEY (`id_turno`),
   INDEX `fk_Turno_Paciente1_idx` (`Paciente_id_paciente` ASC) VISIBLE,
   INDEX `fk_Turno_Especialidad1_idx` (`Especialidad_id_especialidad` ASC) VISIBLE,
   CONSTRAINT `fk_Turno_Paciente1`
@@ -133,5 +133,3 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-
