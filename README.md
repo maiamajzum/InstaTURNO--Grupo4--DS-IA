@@ -88,16 +88,25 @@ Proyecto-Web-Standard/
 |   ├── eliminar_turno.py
 |   └── menu.py
 ├── BD/
-|   ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
-|   ├── Turnero_Scripts_Poblado_Tablas.sql
-|   ├── Turnero_Scripts_querys.sql
-|   ├── TurneroMER.mwb
-|   └── TurneroMER.png
+|   ├── SCRIPTS/
+|   |     ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
+|   |     ├── Turnero_Scripts_Poblado_Tablas.sql
+|   |     └── Turnero_Scripts_querys.sql
+|   ├── Creacion_tablas_python.py
+|   ├── DER.jpg
+|   ├── DIAGRAMA_CROW_FOOT.mbw
+|   ├── DIAGRAMA_CROW_FOOT.png
+|   └── conectar_base_datos.py
 ├── Carpeta-Temporal/
 |   └── *
 ├── EVIDENCIA 2/
 |   ├── Modelo Entidad-Relacion.jpg
 |   └── Turnero.psc
+├── EVIDENCIA 3/
+|   ├── consultar_turno.py
+|   ├── crear_turno.py
+|   ├── eliminar_turno.py
+|   └── menu.py
 ├── .gitignore
 ├── Links a los repositorios personales con .txt
 ├── README.md
