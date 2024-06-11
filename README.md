@@ -173,20 +173,20 @@ BD:
 - **Base de datos del proyecto, sus diagramas y SQL**
     - PDF CON DATOS DE TABLAS Y CONSULTAS.
      - Esquema:
-       -En la primer diapositiva se incluyen título del proyecto y participantes del equipo de trabajo.
-       -En en segunda página se incluye el DER.
-       -En tercer página se incluye el diagrama Crow Foot.
-       -En las páginas siguientes pestán cargadas cada una de las tablas de la base de datos.
-       -Las 3 páginas siguientes contienen el sql referido a Insertar, Actualizar y Eliminar datos en distintas tablas.
-       -Las siguientes páginas incluyen cada una de las consultas con sus 3 items: descripción, sintaxis sql y tabla resultante. 
-        Siendo las consultas las siguientes:
-          -Una sola tabla (mostrando todos los datos).
-          -Una sola tabla (mostrando algunas columnas).
-          -Una sola tabla con where.
-          -Una sola tabla con where utilizando between.
-          -Una sola tabla con where utilizando limit.
-          -Más de 1 tabla con inner join.
-          -Más de 1 tabla con inner join y con filtros.
+       - En la primer diapositiva se incluyen título del proyecto y participantes del equipo de trabajo.
+       - En en segunda página se incluye el DER.
+       - En tercer página se incluye el diagrama Crow Foot.
+       - En las páginas siguientes pestán cargadas cada una de las tablas de la base de datos.
+       - Las 3 páginas siguientes contienen el sql referido a Insertar, Actualizar y Eliminar datos en distintas tablas.
+       - Las siguientes páginas incluyen cada una de las consultas con sus 3 items: descripción, sintaxis sql y tabla resultante. 
+         Siendo las consultas las siguientes:
+          - Una sola tabla (mostrando todos los datos).
+          - Una sola tabla (mostrando algunas columnas).
+          - Una sola tabla con where.
+          - Una sola tabla con where utilizando between.
+          - Una sola tabla con where utilizando limit.
+          - Más de 1 tabla con inner join.
+          - Más de 1 tabla con inner join y con filtros.
     
 - **Creacion_tablas_python.py**
     - Contiene las instrucciones en código Python para crear la base de datos Turnero y agregar las tablas de Paciente, Medico, 
