@@ -189,8 +189,9 @@ BD:
           - Más de 1 tabla con inner join y con filtros.
     
 - **Creacion_tablas_python.py**
-    - Contiene las instrucciones en código Python para crear la base de datos Turnero y agregar las tablas de Paciente, Medico, 
-      Horarios, Departamento, Especialidad, medico_has_especialidad y Turno con sus atributos y relaciones correspondientes.
+    - Este fragmento de código establece una conexión con la base de datos (a traves de la funcion conectar_base_datos) y define 
+      funciones que ejecutan consultas de SQL para crear la base de datos Turnero y las tablas Paciente, Departamento, Horario, 
+      Especialidad, Medico, Turno y Medico_has_Especialidad, junto con sus relaciones y restricciones de clave externa.
 
 - **DER.jpg**
     - Es una imagen del diagrama de Entidad Relacion de las tablas, representadas entidades y atributos y sus relaciones.
@@ -205,9 +206,9 @@ BD:
       estructura de la base de datos.
 
 - **conectar_base_datos.py**
-    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar 
-      representaciones visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la 
-      estructura de la base de datos.
+    - Función llamada conectar_base_datos, que establece una conexión con una base de datos MySQL utilizando las credenciales 
+      proporcionadas (host, usuario, contraseña y nombre de la base de datos). La función devuelve el objeto de conexión para su uso 
+      posterior en otras partes del programa.
 
 EVIDENCIA 2:
 
