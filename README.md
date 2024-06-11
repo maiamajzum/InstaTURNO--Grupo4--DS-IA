@@ -228,7 +228,7 @@ EVIDENCIA 3:
       una lista de turnos y muestra un mensaje de confirmación con los detalles del turno y el código asignado.
 
 - **consultar_turno.py**
-    La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
+    - La función consultar_turno permite al usuario buscar un turno específico utilizando un código de turno ingresado. Si encuentra el 
       turno, muestra los detalles del paciente y el departamento del turno. Si no lo encuentra, muestra un mensaje indicando que el 
       turno no fue encontrado.
 
