@@ -105,7 +105,6 @@ Proyecto-Web-Standard/
 ├── Carpeta-Temporal/
 |   └── *
 ├── EVIDENCIA 2/
-|   ├── Modelo Entidad-Relacion.jpg
 |   └── Turnero.psc
 ├── EVIDENCIA 3/
 |   ├── consultar_turno.py
