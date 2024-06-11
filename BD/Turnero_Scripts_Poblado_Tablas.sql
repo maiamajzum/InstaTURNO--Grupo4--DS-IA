@@ -65,6 +65,42 @@ INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Veró
 INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Hernán', 'Ríos', 4); -- 16
 INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Cecilia', 'Vega', 5); -- 17
 INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Gustavo', 'Luna', 6); -- 18
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Dario', 'Medina', 1); -- 19
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Carlos', 'Leguizamon', 2); -- 20
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Erika', 'Costa', 3); -- 21
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Ariel', 'Fernandez', 4); -- 22
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Alicia', 'Martínez', 5); -- 23
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Pablo', 'Casanova', 6); -- 24
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Soledad', 'Clementi', 1); -- 25
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Martin', 'Correa', 2); -- 26
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Sebastian', 'Alonso', 3); -- 27
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Enzo', 'Fernandez', 4); -- 28
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Leticia', 'Ramirez', 5); -- 29
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Omar', 'Riachi', 6); -- 30
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Melina', 'Guerrido', 1); -- 31
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Agustina', 'Olguin', 2); -- 32
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Carolina', 'Medina', 3); -- 33
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Hernán', 'Casado', 4); -- 34
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Nicolas', 'Vazquez', 5); -- 35
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Juan Pablo', 'Luna', 6); -- 36
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Marisol', 'Campos', 1); -- 37
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Maria Jose', 'Accordia', 2); -- 38
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Damian', 'Villareal', 3); -- 39
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Gisela', 'Gómez', 4); -- 40
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Noelia', 'Ojeda', 5); -- 41
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Myriam', 'Ghirardi', 6); -- 42
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Diego', 'Moltoni', 1); -- 43
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Veronica', 'Loria', 2); -- 44
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Esteban', 'Acosta', 3); -- 45
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Luis', 'Volkman', 4); -- 46
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Luz', 'Desimone', 5); -- 47
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Sofia', 'Suárez', 6); -- 48
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Analia', 'Susini', 1); -- 49
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Ricardo', 'Gonzalez', 2); -- 50
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Sol', 'Paz', 3); -- 51
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Flavio', 'Mendoza', 4); -- 52
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Cristina', 'Fernandez', 5); -- 53
+INSERT INTO Turnero.Medico (Nombre, Apellido, Horario_id_Horario) VALUES ('Gustavo', 'Garcia', 6); -- 54
 
 -- Poblar la tabla medico_has_especialidad
 INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (1,1); -- 1
@@ -121,6 +157,78 @@ INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_e
 INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (18,22); -- 52
 INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (18,23); -- 53
 INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (18,24); -- 54
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (19,1); -- 55
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (19,2); -- 56
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (20,3); -- 57
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (20,4); -- 58
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (21,5); -- 59
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (21,6); -- 60
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (22,7); -- 61
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (22,8); -- 62
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (23,9); -- 63
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (23,10); -- 64
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (24,11); -- 65
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (24,12); -- 66
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (25,13); -- 67
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (25,14); -- 68
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (26,15); -- 69
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (26,16); -- 70
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (27,17); -- 71
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (27,18); -- 72
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (28,19); -- 73
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (28,20); -- 74
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (29,21); -- 75
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (29,22); -- 76
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (30,23); -- 77
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (30,24); -- 78
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (31,25); -- 79
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (31,26); -- 80
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (32,27); -- 81
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (32,28); -- 82
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (33,29); -- 83
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (33,30); -- 84
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (34,1); -- 85
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (34,2); -- 86
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (35,3); -- 87
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (35,4); -- 88
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (36,5); -- 89
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (36,6); -- 90
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (37,7); -- 91
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (37,8); -- 92
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (38,9); -- 93
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (38,10); -- 94
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (39,11); -- 95
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (39,12); -- 96
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (40,13); -- 97
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (40,14); -- 98
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (41,15); -- 99
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (41,16); -- 100
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (42,17); -- 101
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (42,18); -- 102
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (43,19); -- 103
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (43,20); -- 104
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (44,21); -- 105
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (44,22); -- 106
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (45,23); -- 107
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (45,24); -- 108
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (46,25); -- 109
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (46,26); -- 110
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (47,27); -- 111
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (47,28); -- 112
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (48,29); -- 113
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (48,30); -- 114
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (49,1); -- 115
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (49,2); -- 116
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (50,3); -- 117
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (50,4); -- 118
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (51,5); -- 119
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (51,6); -- 120
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (52,7); -- 121
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (52,8); -- 122
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (53,9); -- 123
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (53,10); -- 124
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (54,11); -- 125
+INSERT INTO Turnero.Medico_has_Especialidad (Medico_id_medico, Especialidad_id_especialidad) VALUES (54,12); -- 126
 
 -- Poblar la tabla paciente
 INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Lucía', 'Gómez', 12345678); -- 1
@@ -143,6 +251,46 @@ INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Emilia', 'Romero',
 INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Bautista', 'Martínez', 90123456); -- 18
 INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Catalina', 'González', 12345678); -- 19
 INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Felipe', 'Pérez', 23456789); -- 20
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Mario', 'Abdala', 28740858); -- 21
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Luisa', 'Aguero', 29651813); -- 22
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Carlos', 'Aguilera', 40184442); -- 23
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Adriana', 'Alfonso', 26104249); -- 24
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Eugenia', 'Aleu', 32997809); -- 25
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Daniela', 'Algan', 35794895); -- 26
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Pablo', 'Barlesi', 27589790); -- 27
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Ariel', 'Barnech', 38354542); -- 28
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Gustavo', 'Barrios', 34180521); -- 29
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Erik', 'Baum', 24021740); -- 30
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Sergio', 'Barreto', 17999076); -- 31
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Gabriel', 'Barreiro', 11765715); -- 32
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Marcela', 'Blasco', 26104497); -- 33
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Carolina', 'Cabral', 25351240); -- 34
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Juana', 'Caceres', 27848583); -- 35
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Gerardo', 'Caci', 22539579); -- 36
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Amadeo', 'Caballero', 33784897); -- 37
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Valeria', 'Bustos', 10576347); -- 38
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Luis', 'Calcagno', 24500499); -- 39
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Florencia', 'Camejo', 25731636); -- 40
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Carlos', 'Capasso', 25731636); -- 41
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Vanina', 'Capurro', 21508387); -- 42
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Leonardo', 'Capittini', 26563332); -- 43
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Carmen', 'Conde', 23775426); -- 44
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Ruth', 'Cruz', 26563177); -- 45
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Juana', 'De Luca', 30939823); -- 46
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Cecilia', 'De Tomaso', 256869515); -- 47
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Paula', 'Delgado', 37230172); -- 48
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Graciela', 'Dobal', 21340242); -- 49
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Adelina', 'Dobler', 31761452); -- 50
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Beatriz', 'Evalan', 35722250); -- 51
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Omar', 'Elia', 28273738); -- 52
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Marina', 'Dutroc', 36072543); -- 53
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Cynthia', 'Ganz', 23775279); -- 54
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Silvina', 'Gallardo', 30647460); -- 55
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Adriana', 'Galafassi', 30074549); -- 56
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('David', 'Juncos', 33115290); -- 57
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Marcela', 'Leiva', 23115592); -- 58
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Teresa', 'Lombardi', 35942988); -- 59
+INSERT INTO Turnero.Paciente (Nombre, Apellido, DNI) VALUES ('Ruben', 'Mansilla', 36917329); -- 60
 
 -- Poblar la tabla turno
 INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-01', 10, 1, 1); -- 1
@@ -165,3 +313,43 @@ INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_es
 INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-18', 15, 18, 18); -- 18
 INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-19', 16, 19, 19); -- 19
 INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-20', 18, 20, 20); -- 20
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-01', 8, 21, 1); -- 21
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-03', 9, 22, 2); -- 22
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-02', 10, 23, 3); -- 23
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-04', 11, 24, 4); -- 24
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-05', 12, 25, 5); -- 25
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-06', 13, 26, 6); -- 26
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-07', 14, 27, 7); -- 27
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-08', 15, 28, 8); -- 28
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-09', 16, 29, 9); -- 29
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-10', 17, 30, 10); -- 30
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-11', 18, 31, 11); -- 31
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-12', 19, 32, 12); -- 32
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-13', 20, 33, 13); -- 33
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-14', 8, 34, 14); -- 34
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-15', 9, 35, 15); -- 35
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-16', 8, 36, 16); -- 36
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-17', 10, 37, 17); -- 37
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-18', 11, 38, 18); -- 38
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-19', 12, 39, 19); -- 39
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-20', 13, 40, 20); -- 40
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-01', 14, 41, 21); -- 41
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-03', 15, 42, 22); -- 42
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-02', 16, 43, 23); -- 43
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-04', 17, 44, 24); -- 44
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-05', 18, 45, 25); -- 45
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-06', 19, 46, 26); -- 46
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-07', 20, 47, 27); -- 47
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-08', 8, 48, 28); -- 48
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-09', 9, 49, 29); -- 49
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-10', 10, 50, 30); -- 50
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-11', 11, 51, 21); -- 51
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-12', 12, 52, 22); -- 52
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-13', 13, 53, 23); -- 53
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-14', 14, 54, 24); -- 54
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-15', 15, 55, 25); -- 55
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-16', 16, 56, 26); -- 56
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-17', 17, 57, 27); -- 57
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-18', 18, 58, 28); -- 58
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-19', 19, 59, 29); -- 59
+INSERT INTO Turnero.Turno (Fecha, Hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES ('2024-07-20', 20, 60, 30); -- 60
