@@ -171,8 +171,8 @@ BD:
     - Este archivo es un script SQL que contiene las diferentes consultas realizadas para visualizar información de las tablas.
 
 - **Base de datos del proyecto, sus diagramas y SQL**
-    - PDF CON DATOS DE TABLAS Y CONSULTAS.
-     - Esquema:
+    - Contiene un PDF CON DATOS DE TABLAS Y CONSULTAS.
+      Esquema:
        - En la primer diapositiva se incluyen título del proyecto y participantes del equipo de trabajo.
        - En en segunda página se incluye el DER.
        - En tercer página se incluye el diagrama Crow Foot.
