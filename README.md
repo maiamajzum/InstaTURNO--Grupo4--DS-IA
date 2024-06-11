@@ -123,28 +123,38 @@ Proyecto-Web-Standard/
 APLICACION:
 
 - **consulta_global.py**
-    - 
+    - Contiene la función consulta_global, que muestra todos los turnos registrados en el sistema. Si hay turnos disponibles, los 
+      muestra en una tabla ordenada por código de turno; de lo contrario, imprime un mensaje indicando que no hay turnos cargados en el 
+      sistema.
       
 - **consulta_medicos.py**
-    - 
+    - Ofrece la función consulta_medicos, que muestra una lista de médicos y sus especialidades consultando la base de datos. Si hay 
+      médicos disponibles, los muestra en una tabla; de lo contrario, imprime un mensaje indicando que no hay médicos registrados.
 
 - **actualizar_turno.py**
-    - 
+    - Permite al usuario actualizar información de un turno existente, como cambiar el paciente o el área médica. Solicita al usuario 
+      que ingrese el código del turno y la información actualizada.
 
 - **consultar_turno.py**
-    - 
+    - Permite al usuario buscar turnos, ya sea por el DNI del paciente o mostrando todos los turnos disponibles. Muestra los resultados 
+      en forma tabular si los encuentra.
 
 - **crear_turno.py**
-    -
+    - Permite al usuario crear un nuevo turno seleccionando primero una especialidad médica y luego ingresando su información personal. 
+      Verifica si el paciente ya existe en la base de datos y lo agrega si es necesario, luego crea el nuevo turno.
 
 - **eliminar_turno.py**
-    - 
+    - Permite al usuario eliminar un turno existente proporcionando su código. Verifica si se encuentra el turno y lo elimina de la base 
+      de datos.
 
 - **menu.py**
-    - 
+    - Ofrece un menú interactivo que permite al usuario seleccionar entre varias acciones, como crear, consultar, actualizar y eliminar 
+      turnos, así como acceder a opciones avanzadas como listar médicos. Utiliza funciones modulares para ejecutar las acciones 
+      seleccionadas.
 
 - **opciones_avanzadas.py**
-    - 
+    - Ofrece al usuario acceso a opciones avanzadas, en este caso, listar médicos disponibles. Al seleccionar esta opción, muestra la 
+      lista de médicos utilizando una función modular.
 
 BD:
 
@@ -165,19 +175,19 @@ BD:
     - PDF CON DATOS DE TABLAS Y CONSULTAS.
      - Esquema:
        -En la primer diapositiva se incluyen título del proyecto y participantes del equipo de trabajo.
-       -En en segunda página se incluye el DER,
+       -En en segunda página se incluye el DER.
        -En tercer página se incluye el diagrama Crow Foot.
        -En las páginas siguientes pestán cargadas cada una de las tablas de la base de datos.
        -Las 3 páginas siguientes contienen el sql referido a Insertar, Actualizar y Eliminar datos en distintas tablas.
        -Las siguientes páginas incluyen cada una de las consultas con sus 3 items: descripción, sintaxis sql y tabla resultante. 
         Siendo las consultas las siguientes:
-        ○ Una sola tabla (mostrando todos los datos).
-        ○ Una sola tabla (mostrando algunas columnas).
-        ○ Una sola tabla con where.
-        ○ Una sola tabla con where utilizando between.
-        ○ Una sola tabla con where utilizando limit.
-        ○ Más de 1 tabla con inner join.
-        ○ Más de 1 tabla con inner join y con filtros.
+          -Una sola tabla (mostrando todos los datos).
+          -Una sola tabla (mostrando algunas columnas).
+          -Una sola tabla con where.
+          -Una sola tabla con where utilizando between.
+          -Una sola tabla con where utilizando limit.
+          -Más de 1 tabla con inner join.
+          -Más de 1 tabla con inner join y con filtros.
     
 - **Creacion_tablas_python.py**
     - Contiene las instrucciones en código Python para crear la base de datos Turnero y agregar las tablas de Paciente, Medico, 
@@ -236,7 +246,7 @@ RESTO DE ARCHIVOS:
 - **Links a los repositorios personales**
     - Contiene el enlace a repositorios personales de cada integrante del grupo.
 
--**Turnero - Analisis.txt**
+- **Turnero - Analisis.txt**
    - Analisis detallado de las funciones del sistema.
 ---
 
