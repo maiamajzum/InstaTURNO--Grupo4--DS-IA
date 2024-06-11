@@ -83,10 +83,12 @@ Las principales funcionalidades que incluye son:
 Proyecto-Web-Standard/
 |
 ├── APLICACION/
+|   ├── actualizar_turno.py
 |   ├── consultar_turno.py
 |   ├── crear_turno.py
 |   ├── eliminar_turno.py
-|   └── menu.py
+|   ├── menu.py
+|   └── opciones_avanzadas.py
 ├── BD/
 |   ├── SCRIPTS/
 |   |     ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
