@@ -145,21 +145,36 @@ Proyecto-Web-Standard/
       Medico_has_Especialidad. Establece relaciones entre estas tablas utilizando claves primarias y foráneas para garantizar la 
       integridad de los datos.
 
-- **TurneroMER.mwb**
-    - El archivo MWB contiene el diseño y la estructura de la base de datos "Turnero", incluyendo tablas, relaciones, índices y otros 
-      elementos, en un formato específico de MySQL Workbench.
-
-- **TurneroMER.png**
-    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar 
-      representaciones visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la 
-      estructura de la base de datos.
-
 - **Turnero_Scripts_Poblado_Tablas.sql**
     - Este archivo es un script SQL que contiene las ejecuciones realizadas inicialmente para poblar las diferentes tablas de la base de 
       datos.
       
 - **Turnero_Scripts_querys.sql**
     - Este archivo es un script SQL que contiene las diferentes consultas realizadas para visualizar información de las tablas.
+
+- **DIGRAMA_CROW_FOOT.mwb**
+    - El archivo MWB contiene el diseño y la estructura de la base de datos "Turnero", incluyendo tablas, relaciones, índices y otros 
+      elementos, en un formato específico de MySQL Workbench.
+
+- **DIAGRAMA_CROW_FOOT.png**
+    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar 
+      representaciones visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la 
+      estructura de la base de datos.
+
+- **Base de datos del proyecto, sus diagramas y SQL**
+    - PDF CON DATOS DE TABLAS Y CONSULTAS.
+    - Esquema:
+
+- **DIAGRAMA_CROW_FOOT.png**
+    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar 
+      representaciones visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la 
+      estructura de la base de datos.
+
+- **DIAGRAMA_CROW_FOOT.png**
+    - Este archivo es una imagen del diagrama entidad-relación (ER) de la base de datos "Turnero". En la imagen podemos encontrar 
+      representaciones visuales de las tablas, relaciones entre ellas, claves primarias y foráneas, y otros elementos que componen la 
+      estructura de la base de datos.
+
 
 ---
 
