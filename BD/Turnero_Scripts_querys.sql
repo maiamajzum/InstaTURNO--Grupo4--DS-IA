@@ -26,3 +26,12 @@ INNER JOIN especialidad ON turno.Especialidad_id_especialidad = especialidad.id_
 INNER JOIN horario ON turno.hora = horario.id_Horario
 WHERE especialidad.Nombre = 'Clínica Médica' AND horario.hora_inicio = 9;
 
+SELECT tt.id_turno, tt.fecha, tt.hora, tp.Apellido, tp.Nombre, tp.DNI, te.Nombre -- Consulta de mas de una tabla con INNER JOIN y filtros
+FROM Turnero.Turno tt
+INNER JOIN Turnero.Especialidad te 
+    ON te.id_especialidad = tt.Especialidad_id_especialidad
+INNER JOIN Turnero.Paciente tp 
+    ON tp.id_paciente = tt.Paciente_id_paciente
+ORDER BY tt.fecha, tt.hora, tp.Apellido, tp.Nombre, tp.DNI, te.Nombre;
+
+
