@@ -83,6 +83,9 @@ Las principales funcionalidades que incluye son:
 Proyecto-Web-Standard/
 |
 ├── APLICACION/
+|   ├── consultas_generales/
+|   |     ├── consulta_global.py
+|   |     ├── consulta_medicos.py
 |   ├── actualizar_turno.py
 |   ├── consultar_turno.py
 |   ├── crear_turno.py
