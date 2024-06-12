@@ -85,7 +85,10 @@ Proyecto-Web-Standard/
 ├── APLICACION/
 |   ├── consultas_generales/
 |   |     ├── consulta_global.py
-|   |     ├── consulta_medicos.py
+|   |     └── consulta_medicos.py
+|   ├── tabulate/
+|   |     ├── __init__.py
+|   |     └── version.py
 |   ├── actualizar_turno.py
 |   ├── conectar_base_datos.py
 |   ├── consultar_turno.py
@@ -131,6 +134,9 @@ APLICACION:
 - **consulta_medicos.py**
     - Ofrece la función consulta_medicos, que muestra una lista de médicos y sus especialidades consultando la base de datos. Si hay 
       médicos disponibles, los muestra en una tabla; de lo contrario, imprime un mensaje indicando que no hay médicos registrados.
+
+- **tabulate (__init__.py - version.py)**
+    - 
 
 - **actualizar_turno.py**
     - Permite al usuario actualizar información de un turno existente, como cambiar el paciente o el área médica. Solicita al usuario 
