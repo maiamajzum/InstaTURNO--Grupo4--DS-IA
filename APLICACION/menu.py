@@ -23,7 +23,7 @@ def menu_inicio():
                 if user_opt in [0, 1, 2, 3, 4, 5]:
                     break
                 else:
-                    print("Por favor, ingrese un número entre 0 y 4.")
+                    print("Por favor, ingrese un número entre 0 y 5.")
             except ValueError:
                 print("Por favor, ingrese un número.")
 
