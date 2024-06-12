@@ -97,6 +97,7 @@ Proyecto-Web-Standard/
 |   |     ├── Turnero_Scripts_Creacion_Esquema_Tablas.sql
 |   |     ├── Turnero_Scripts_Poblado_Tablas.sql
 |   |     └── Turnero_Scripts_querys.sql
+|   ├── Base de datos del proyecto, sus diagramas y SQL
 |   ├── Creacion_tablas_python.py
 |   ├── DER.jpg
 |   ├── DIAGRAMA_CROW_FOOT.mbw
