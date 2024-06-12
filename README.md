@@ -188,9 +188,10 @@ BD:
           - Más de 1 tabla con inner join y con filtros.
     
 - **Creacion_tablas_python.py**
-    - Este fragmento de código establece una conexión con la base de datos (a traves de la funcion conectar_base_datos) y define 
-      funciones que ejecutan consultas de SQL para crear la base de datos Turnero y las tablas Paciente, Departamento, Horario, 
-      Especialidad, Medico, Turno y Medico_has_Especialidad, junto con sus relaciones y restricciones de clave externa.
+    - Este fragmento de código establece una conexión con la base de datos MySQL y define una funcion para crear la base de datos 
+      Turnero, posteriormente se conecta a la base de datos Turnero a traves de la funcion conectar_base_datos, y define una funcion que 
+      ejecuta consultas SQL para crear las tablas Paciente, Departamento, Horario, Especialidad, Medico, Turno y 
+      Medico_has_Especialidad, junto con sus relaciones y restricciones de clave externa.
 
 - **DER.jpg**
     - Es una imagen del diagrama de Entidad Relacion de las tablas, representadas entidades y atributos y sus relaciones.

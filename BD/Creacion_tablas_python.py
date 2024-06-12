@@ -24,7 +24,11 @@ def crear_base_de_datos():
 
 # Función para crear todas las tablas
 def crear_tablas():
+<<<<<<< HEAD
     conexion = conectar_base_datos()  # Ahora conectamos a la base de datos específica
+=======
+    conexion = conectar_base_datos()  # Ahora conectamos a la base de datos Turnero
+>>>>>>> e4f5df2a9e1044e83ad28a02e0390d9ebe7f829d
     cursor = conexion.cursor()
     try:
         cursor.execute("USE Turnero")
