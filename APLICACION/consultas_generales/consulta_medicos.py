@@ -5,6 +5,9 @@ def consulta_medicos():
     conn = conectar_base_datos()
     cursor = conn.cursor()
 
+
+    # Lista 'simple' -> si bien unimos 2 tablas, solamente mostramos todos los médicos con sus especialdiades.
+    # Objetivo -> Brindar la opción al paciente de elegir con qué medico se quiere antender (en caso de existir mas de una opción)
     query = """
     SELECT CONCAT(m.Nombre, ' ', m.Apellido) AS Nombre_Completo_Medico, 
            e.Nombre AS Nombre_Especialidad 

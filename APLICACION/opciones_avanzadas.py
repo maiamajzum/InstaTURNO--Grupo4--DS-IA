@@ -5,6 +5,11 @@ def opciones_avanzadas():
     conn = conectar_base_datos()
     cursor = conn.cursor()
 
+
+    # Opciones Avanzadas:
+    #
+    # En esta versión del programa, las opciones avnazadas son simples. -> OBJETIVO: poder implementar una interfaz gráfica,
+    #y que el usuario pueda modificar a gusto la paleta de colores (MODO CLARO/OSCURO, para comenzar)
     print('- Opciones Avanzadas -')
     print('1. Lista de Médicos')
     print('0. Salir')
@@ -22,6 +27,7 @@ def opciones_avanzadas():
     if user_opt == 0:
         print('Cerrando Módulo Avanzado...')
 
+    # Lista -> médicos
     if user_opt == 1:
         consulta_medicos()
         
