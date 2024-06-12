@@ -117,6 +117,7 @@ Proyecto-Web-Standard/
 |   ├── eliminar_turno.py
 |   └── menu.py
 ├── .gitignore
+├── Link al video de presentacion.txt
 ├── Links a los repositorios personales con .txt
 ├── README.md
 └── Turnero - Analisis.txt
@@ -254,9 +255,12 @@ EVIDENCIA 3:
 RESTO DE ARCHIVOS:
 
 - **.gitignore**
-     - Contiene las carpetas dentro del repositorio que no deben tenerse en cuenta en la revisión.
+     - Contiene las carpetas dentro del repositorio que no deben tenerse en cuenta en la revisión. 
 
-- **Links a los repositorios personales**
+- **Link al video de presentacion.txt**
+    - Contiene el enlace al drive que aloja el video de presentacion de Instaturno para el proyecto final.
+
+- **Links a los repositorios personales.txt**
     - Contiene el enlace a repositorios personales de cada integrante del grupo.
 
 - **Turnero - Analisis.txt**
