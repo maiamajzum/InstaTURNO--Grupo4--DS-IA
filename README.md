@@ -87,6 +87,7 @@ Proyecto-Web-Standard/
 |   |     ├── consulta_global.py
 |   |     ├── consulta_medicos.py
 |   ├── actualizar_turno.py
+|   ├── conectar_base_datos.py
 |   ├── consultar_turno.py
 |   ├── crear_turno.py
 |   ├── eliminar_turno.py
@@ -134,6 +135,11 @@ APLICACION:
 - **actualizar_turno.py**
     - Permite al usuario actualizar información de un turno existente, como cambiar el paciente o el área médica. Solicita al usuario 
       que ingrese el código del turno y la información actualizada.
+
+ **conectar_base_datos.py**
+    - Función llamada conectar_base_datos, que establece una conexión con una base de datos MySQL utilizando las credenciales 
+      proporcionadas (host, usuario, contraseña y nombre de la base de datos). La función devuelve el objeto de conexión para su uso 
+      posterior en otras partes del programa.
 
 - **consultar_turno.py**
     - Permite al usuario buscar turnos, ya sea por el DNI del paciente o mostrando todos los turnos disponibles. Muestra los resultados 
