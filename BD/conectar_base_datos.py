@@ -5,6 +5,6 @@ def conectar_base_datos():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="clavedeusuario",
+        password="1234",
         database="Turnero"
     )
