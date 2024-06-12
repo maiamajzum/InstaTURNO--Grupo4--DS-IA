@@ -1,10 +1,18 @@
 from crear_turno import crear_turno
 from consultar_turno import consultar_turno
 from eliminar_turno import eliminar_turno
-from actualizar_turno import actualizar_turno
-from opciones_avanzadas import opciones_avanzadas
 
 def menu_inicio():
+    E1 = 'Oftalmología'
+    E2 = 'Laboratorio'
+    E3 = 'Traumatología'
+    E4 = 'Psicología'
+    E5 = 'Cardiología'
+    E6 = 'Neurología'
+    E7 = 'Pediatría'
+    E8 = 'Dermatología'
+    departamentos = [E1, E2, E3, E4, E5, E6, E7, E8]
+    turnos = []  # lista para almacenar los turnos
 
     print('- Bienvenido al Sistema de Gestión de Turnos -')
 
@@ -12,32 +20,32 @@ def menu_inicio():
         print('Para continuar seleccionar una opción:')
         print('1. Crear Turno.')
         print('2. Consultar Turno.')
-        print('3. Actualizar Turno.')
-        print('4. Eliminar Turno.')
-        print('5. Opciones avanzadas.')
+        print('3. Eliminar Turno.')
         print('0. Salir')
 
         while True:
             try:
                 user_opt = int(input())
-                if user_opt in [0, 1, 2, 3, 4, 5]:
+                if user_opt in [0, 1, 2, 3]:
                     break
                 else:
-                    print("Por favor, ingrese un número entre 0 y 5.")
+                    print("Por favor, ingrese un número entre 0 y 3.")
             except ValueError:
                 print("Por favor, ingrese un número.")
 
+        if user_opt == 0:
+            print('Hasta luego, gracias por confiar en InstaTurno.')
+            break
+
+        user_a = input('Ingrese su Apellido: ')
+        user_dni = input('Ingrese su DNI: ')
 
         if user_opt == 1:
-            crear_turno()
+            crear_turno(departamentos, turnos, user_a, user_dni)
         elif user_opt == 2:
-            consultar_turno()
+            consultar_turno(turnos)
         elif user_opt == 3:
-            actualizar_turno()
-        elif user_opt == 4:
-            eliminar_turno()
-        elif user_opt == 5:
-            opciones_avanzadas()
+            eliminar_turno(turnos)
 
         print('Desea realizar otro trámite?')
         print('1. Si.')
@@ -56,6 +64,6 @@ def menu_inicio():
             print('Hasta luego, gracias por confiar en InstaTurno.')
             break
 
-# Main
+# Ejecutar el menú
 if __name__ == "__main__":
     menu_inicio()

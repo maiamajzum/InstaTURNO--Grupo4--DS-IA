@@ -1,4 +1,9 @@
-def eliminar_turno(turnos):
+from conectar_base_datos import conectar_base_datos
+
+def eliminar_turno():
+    conn = conectar_base_datos()
+    cursor = conn.cursor()
+
     while True:
         try:
             c = int(input('Ingrese su código de turno: '))
@@ -6,13 +11,12 @@ def eliminar_turno(turnos):
         except ValueError:
             print("Código no válido. Por favor, ingrese un número.")
 
-    encontrado = False
-    for i in range(len(turnos)):
-        if turnos[i][0] == c:
-            del turnos[i]
-            print(f'Su turno {c} ha sido ELIMINADO.')
-            encontrado = True
-            break
-    if not encontrado:
+    cursor.execute('DELETE FROM Turno WHERE id_turno = %s', (c,))
+    conn.commit()
+
+    if cursor.rowcount > 0:
+        print(f'Su turno {c} ha sido ELIMINADO.')
+    else:
         print('Turno NO encontrado.')
 
+    conn.close()
