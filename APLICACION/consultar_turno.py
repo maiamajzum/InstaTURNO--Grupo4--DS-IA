@@ -19,7 +19,7 @@ def consultar_turno():
                 if user_opt in [0, 1, 2]:
                     break
                 else:
-                    print("Por favor, ingrese un número entre 0 y 4.")
+                    print("Por favor, ingrese un número entre 0 y 2.")
             except ValueError:
                 print("Por favor, ingrese un número correcto.")
 

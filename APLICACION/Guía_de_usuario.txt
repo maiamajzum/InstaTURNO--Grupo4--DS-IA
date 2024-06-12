@@ -1,0 +1,54 @@
+- Bienvenido a la " Guía para el Súper Usuario de InstaTurno " -
+
+La guía se dividirá en 2 partes:
+                                La primer parte está pensada para el 'TECNICO' encargado de poner en funcionamiento la Base de Datos.
+                                La segunda parte está orientada al 'USUARIO FINAL', quien usará el programa en su día a día.
+
+- PRIMERA PARTE: La puesta en Marcha -
+
+1. Una vez que es equipo de InstaTurno brinde las credenciales para descargar los archivos del programa, se obtendra:
+        a. Script '.sql' para la creación de la database.
+        b. Archivo 'conectar_base-datos.py'
+        c. Archivo 'menu.py' para la ejecución del programa.
+
+2. Como primer paso, se deberá ejecutar el archivo '1.a' (Script .sql) con el administrador de Base de Datos 
+(el equipo InstaTurno recomienda: MySQL Workbench).
+
+3. Una vez creada la Base de datos, se deberá dirigir al archivo '1.b' ('conectar_base_datos.py') en donde se deberan configurar las 
+credenciales para permitir el acceso a la Base de datos.
+
+4. Para finalizar y comprobar la correcta instalación del programa, se deberá abrir una instancia de la consola:
+    En Windors -> tecla windows + R
+    En Linux -> ctrl + alt + t 
+4.1 Utilizando la consola, se deberá dirigir a la carpeta en la que está conteniendo el archivo '1.c' (menu.py), 
+si bien puede variar dependiendo del destino de la descarga, la tura suele ser:
+                                    " cd /C/Descargas/APLICACION/ "
+4.2 Una vez dentro de la carpeta, se deberá ejecutar la aplicación de la siguiente manera:
+    "python menu.py" o "puthon3 menu.py"
+
+Llegado este punto, la instalación del programa a concluido.
+En caso de presentar algun inconveniente, ponerse en contacto con el equipo InstaTurno.
+
+
+- SEGUNDA PARTE: el día a día -
+
+1. El sistema presenta un menú de inicio ya listo para que el usuario lo utilice. A continuación revisaremos cada una de las opciones:
+
+    1.a 'Crear Turno' -> al seleccionar esta opción, el sistema le indicará al usuario que debe seleccionar un 'Área Médica' para proseguri con el tŕamite.
+    Acto seguido, se despliegará una lista con las especialidades disponibles y su respectivo código. -> Si el Usuario ingresa un código incorrecto, 
+    el sistema emitirá una alerta para que el usuario corrija la elección. -> En caso de seleccionar un código válido, el sistema solicitará los datos
+    personales del paciente para finalizar la creación del turno.
+
+    1.b 'Consultar Turno' -> al seleccionar esta opción, el sistema desplegará un 'submenú' en donde dará al usuario la opción de buscar 'Turnos asociados
+    a un paciente en específico' o 'todos los Turnos cargados en el sistema'. -> en caso de seleccionar la primer opción, el sistema solicitará los datos
+    personales del paciente para poder prosegir con la búsqueda y mostrar los resultados en caso de encontrarlos.
+
+    1.c 'Actualizar Turno' -> al seleccionar esta opción, el sistema solicitaŕa al usuario ingresar el 'código de turno' asociado al turno que se desea
+    modificar. -> De encontrarse un turno asociado a ese código, el sistema desplegará un 'submenú' en donde dará al usuario la opción de modificar
+    'el paciente' asociado al turno o modificar 'la especialidad' asociada al turno. -> En ambos casos, el sistema le solicitará al usuario la información
+    pertienete para poder dejar acentada la actualización.
+
+    1.d 'Eliminar Turno' -> al seleccionar esta opción, el sistema solicitará al usuario ingresar el 'código de turno' asociado al turno que se desea
+    borrar. De existir un turno asociado a ese código, el sistema lo eliminará automaticamente. ATENCIÓN: ESTA ACCIÓN ES IRREVERSIBLE!
+
+    1.e 'Opciones Avanzadas' -> En esta opción, el sistema le proporciona al usuario una lista con todos los médicos y sus áreas de especialidad.
