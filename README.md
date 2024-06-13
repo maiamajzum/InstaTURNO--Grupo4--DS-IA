@@ -294,7 +294,8 @@ RESTO DE ARCHIVOS:
     - MacOS
     - Source Code
 - _NOTA: si bien el sitio de `MySQL` va a detectar el sistema operativo y arquitectura con la que contamos, en caso de que no esté sucediendo debe seleccionar desde el menú desplegable `Select Operating System`_
-
+- _NOTA: Para versiones de ´MySQL´8.4 y posteriores, puede ser necesario tener activada la variable "restrict_fk_on_non_standard_key",   que se encuentra desactivada por default. Esto permitirá la creaciónd de tablas con clave primaria compuesta.
+  
 ### 3. Instalación de `Visual Studio Code`
 
 - Ingresar a la sección de [Descargas de Visual Studio Code](https://code.visualstudio.com/download) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado:
