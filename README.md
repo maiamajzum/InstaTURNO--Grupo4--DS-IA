@@ -88,6 +88,7 @@ Proyecto-Web-Standard/
 |   |     └── consulta_medicos.py
 |   ├── mysql/
 |   ├── tabulate/
+|   ├── Guia_de_usuario.txt
 |   ├── actualizar_turno.py
 |   ├── conectar_base_datos.py
 |   ├── consultar_turno.py
@@ -140,6 +141,9 @@ APLICACION:
 
 - **tabulate**
     - Biblioteca descargada para que acomode las tablas al imprimir por consola.
+ 
+- **Guia_de_usuario.txt**
+    - Instructivo de uso para técnicos y usuarios finales.
 
 - **actualizar_turno.py**
     - Permite al usuario actualizar información de un turno existente, como cambiar el paciente o el área médica. Solicita al usuario 
