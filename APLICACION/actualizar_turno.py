@@ -1,4 +1,5 @@
-from BD.conectar_base_datos import conectar_base_datos
+from conectar_base_datos import conectar_base_datos
+
 def actualizar_turno():
     conn = conectar_base_datos()
     cursor = conn.cursor()

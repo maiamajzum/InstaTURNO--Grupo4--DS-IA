@@ -1,5 +1,5 @@
-from BD.conectar_base_datos import conectar_base_datos
-from APLICACION.tabulate import tabulate
+from conectar_base_datos import conectar_base_datos
+from tabulate import tabulate
 
 def consulta_medicos():
     conn = conectar_base_datos()

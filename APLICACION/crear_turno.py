@@ -1,4 +1,4 @@
-from BD.conectar_base_datos import conectar_base_datos
+from conectar_base_datos import conectar_base_datos
 from tabulate import tabulate
 
 def crear_turno():

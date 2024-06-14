@@ -1,4 +1,4 @@
-from BD.conectar_base_datos import conectar_base_datos
+from conectar_base_datos import conectar_base_datos
 from consultas_generales.consulta_global import consulta_global
 from tabulate import tabulate
 

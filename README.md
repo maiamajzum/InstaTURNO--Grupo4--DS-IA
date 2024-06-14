@@ -90,6 +90,7 @@ InstaTURNO--Grupo4--DS-IA/
 |   ├── tabulate/
 |   |     └── *
 |   ├── actualizar_turno.py
+|   ├── conectar_base_datos.py
 |   ├── consultar_turno.py
 |   ├── crear_turno.py
 |   ├── eliminar_turno.py
@@ -145,6 +146,11 @@ InstaTURNO--Grupo4--DS-IA/
 - **[actualizar_turno.py](APLICACION/actualizar_turno.py)**
     - Permite al usuario actualizar información de un turno existente, como cambiar el paciente o el área médica. Solicita al usuario 
       que ingrese el código del turno y la información actualizada.
+
+- **[conectar_base_datos.py](APLICACION/Creacion_tablas_python.py)**
+    - Función llamada conectar_base_datos, que establece una conexión con una base de datos MySQL utilizando las credenciales 
+      proporcionadas (host, usuario, contraseña y nombre de la base de datos). La función devuelve el objeto de conexión para su uso 
+      posterior en otras partes del programa.
 
 - **[consultar_turno.py](APLICACION/consultar_turno.py)**
     - Permite al usuario buscar turnos, ya sea por el DNI del paciente o mostrando todos los turnos disponibles. Muestra los resultados 
@@ -315,3 +321,11 @@ InstaTURNO--Grupo4--DS-IA/
 - `Python` _(Microsoft)_: para la correcta ejecución de scripts en Python.
 - `MySQL` _(Weijan Chen)_: para la correcta visualización y ejecución de scripts en MySQL.
 - `Tabnine` _(Tabnine)_: en caso de que requiera intervenir el código luego de descargarlo a su equipo, se recomienda la instalación de este plugin para la correcta autocompletación de código en Python.
+
+### 4. Opcional: Descarga e Instalación de `PyCharm Community Edition`
+
+- Ingresar a la sección de [Descargas de PyCharm de JetBrains](https://www.jetbrains.com/pycharm/download/?section=windows) y descargar la última versión disponible según la arquitectura del procesador de nuestra computadora y el sistema operativo que tiene instalado.
+
+> _NOTA: en el sitio de `JetBrains` va a detectar el sistema operativo y arquitectura con la que contamos._
+
+> _NOTA: recuerde que en el sitio tendrá la disponibilidad de seleccionar entre dos (2) versiones de `PyCharm` siendo una de ellas, la `Professional` la versión paga y la `Community` la versión gratuita._
