@@ -1,10 +1,10 @@
-import mysql.connector
+from APLICACION.mysql import connector
 
-# modificar los datos entre comillas por los correspondientes a su usuario de MYSQL
+# modificar los datos entre comillas por los correspondientes con sus credenciales de acceso configuradas en la instalación de MySQL
 def conectar_base_datos():
-    return mysql.connector.connect(
+    return connector.connect(
         host="localhost",
-        user="root",
-        password="1234",
+        user="configured_mySQL_user",
+        password="configured_mySQL_password",
         database="Turnero"
     )

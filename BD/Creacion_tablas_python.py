@@ -1,9 +1,9 @@
-import mysql.connector
+from APLICACION.mysql import connector
 from conectar_base_datos import conectar_base_datos
 
 # Función para conectar a MySQL sin especificar una base de datos
 def conectar_sin_base_de_datos():
-    return mysql.connector.connect(
+    return connector.connect(
         host="localhost",
         user="root",
         password="1234"
@@ -16,7 +16,7 @@ def crear_base_de_datos():
     try:
         cursor.execute("CREATE DATABASE IF NOT EXISTS Turnero")
         print("Base de datos 'Turnero' creada correctamente.")
-    except mysql.connector.Error as err:
+    except connector.Error as err:
         print("Error al crear la base de datos 'Turnero':", err)
     finally:
         cursor.close()
@@ -24,11 +24,7 @@ def crear_base_de_datos():
 
 # Función para crear todas las tablas
 def crear_tablas():
-<<<<<<< HEAD
     conexion = conectar_base_datos()  # Ahora conectamos a la base de datos específica
-=======
-    conexion = conectar_base_datos()  # Ahora conectamos a la base de datos Turnero
->>>>>>> e4f5df2a9e1044e83ad28a02e0390d9ebe7f829d
     cursor = conexion.cursor()
     try:
         cursor.execute("USE Turnero")
@@ -136,7 +132,7 @@ def crear_tablas():
         """)
 
         print("Tablas creadas correctamente.")
-    except mysql.connector.Error as err:
+    except connector.Error as err:
         print("Error al crear las tablas:", err)
     finally:
         cursor.close()

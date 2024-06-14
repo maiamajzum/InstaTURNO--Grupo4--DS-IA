@@ -1,4 +1,4 @@
-from conectar_base_datos import conectar_base_datos
+from BD.conectar_base_datos import conectar_base_datos
 from tabulate import tabulate
 
 def crear_turno():
@@ -8,7 +8,7 @@ def crear_turno():
     print('Para CREAR un turno, seleccione un departamento médico:')
 
     #Recupera de la DB la tabla de especialidades.
-    cursor.execute('SELECT id_especialidad, Nombre FROM Especialidad')
+    cursor.execute('SELECT id_especialidad, Nombre FROM Especialidad ORDER BY Nombre ASC;')
     especialidades = cursor.fetchall()
 
     #Si hay especialidades cargadas en la tabla, las devuelve por pantalla
@@ -49,19 +49,19 @@ def crear_turno():
     # Siguiente paso (indistinto a la preexistencia del paciente) es recuperar el ID de la tabla para -> cargar un nuevo turno con ese ID
     #en la tabla de turnos
     if not t:
-        cursor.execute('INSERT INTO Paciente (Nombre, Apellido, DNI) VALUES (%s, %s, %s)', (user_m, user_a, user_dni))
-        cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s', (user_dni,))
+        cursor.execute('INSERT INTO Paciente (Nombre, Apellido, DNI) VALUES (%s, %s, %s);', (user_m, user_a, user_dni))
+        cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s;', (user_dni,))
         tdni = cursor.fetchone()[0]
-        cursor.execute('INSERT INTO Turno (fecha, hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES (CURDATE(), CURTIME(), %s, %s)', (tdni, f))
+        cursor.execute('INSERT INTO Turno (fecha, hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES (CURDATE(), CURTIME(), %s, %s);', (tdni, f))
     else:
         cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s', (user_dni,))
         tdni = cursor.fetchone()[0]
-        cursor.execute('INSERT INTO Turno (fecha, hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES (CURDATE(), CURTIME(), %s, %s)', (tdni, f))
+        cursor.execute('INSERT INTO Turno (fecha, hora, Paciente_id_paciente, Especialidad_id_especialidad) VALUES (CURDATE(), CURTIME(), %s, %s);', (tdni, f))
 
 
     # Mensaje final -> avisa la especialidad, el código del turno (ID) que se va a utilizar para otros tŕamites en el sistema
     print(f'Usted seleccionó {user_turn}.')
-    cursor.execute('SELECT MAX(id_turno) FROM Turno')
+    cursor.execute('SELECT MAX(id_turno) FROM Turno;')
     c = cursor.fetchone()
     print(f'El código de su turno es: {c[0]}.') #Borré la coma, chicos :D
     print('Recibirá un Email con la confirmación del horario.') # ----> OBJETIVO! poder implementar esta funcionalidad 

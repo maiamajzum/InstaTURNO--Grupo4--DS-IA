@@ -1,14 +1,12 @@
-from conectar_base_datos import conectar_base_datos
-
+from BD.conectar_base_datos import conectar_base_datos
 def actualizar_turno():
     conn = conectar_base_datos()
     cursor = conn.cursor()
 
     while True:
         try:
-            print('Ingrese su código de turno: ')
             # Siempre contemplemos la opción del usuario de no querer avanzar.
-            print('0. Salir')
+            print('Ingrese su código de turno o digite 0 (cero) para Salir: ')
             #Almacenamos el código de turno (Id_turno)
             c = int(input())
             if c == 0:
@@ -21,7 +19,13 @@ def actualizar_turno():
 
     # Conlsuta a la DB -> Existe este id?
     #de ser así, devuelveme el nombre completo y la especialidad.
-    cursor.execute("SELECT t.id_turno, CONCAT(p.Nombre, ' ', p.Apellido) AS Nombre_Paciente, e.Nombre AS Nombre_Especialidad FROM Turno t INNER JOIN Paciente p ON t.Paciente_id_paciente = p.id_paciente INNER JOIN Especialidad e ON t.Especialidad_id_especialidad = e.id_especialidad WHERE t.id_turno = %s;", (c,))
+    cursor.execute("""SELECT t.id_turno,
+                             CONCAT(p.Nombre, ' ', p.Apellido) AS Nombre_Paciente,
+                             e.Nombre AS Nombre_Especialidad
+                       FROM Turno t
+                       INNER JOIN Paciente p ON t.Paciente_id_paciente = p.id_paciente
+                       INNER JOIN Especialidad e ON t.Especialidad_id_especialidad = e.id_especialidad
+                       WHERE t.id_turno = %s;""", (c,))
     turno = cursor.fetchone()
 
     if turno:
@@ -45,12 +49,12 @@ def actualizar_turno():
         if opcion == 1:
             nuevo_dni = input('Ingrese el nuevo DNI:')
             # DB, este DNI existe?
-            cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s', (nuevo_dni,))
+            cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s;', (nuevo_dni,))
             h = cursor.fetchone()
 
             # Si, el DNI existe -> Entonces modifica la tabla turno con este nuevo id_paciente en la id_turno agregada anteriormente.
             if h:
-                cursor.execute('UPDATE Turno SET Paciente_id_paciente = %s WHERE id_turno = %s', (h[0], c))
+                cursor.execute('UPDATE Turno SET Paciente_id_paciente = %s WHERE id_turno = %s;', (h[0], c))
                 conn.commit()
                 print('Se ha actualizado el turno')
             # No, el DNI no existe -> Entonces, crea un nuevo paciente!
@@ -62,19 +66,19 @@ def actualizar_turno():
                 nuevo_apellido = input('Ingrese el nuevo apellido: ')
 
                 # INSERT a la DB
-                cursor.execute('INSERT INTO Paciente (Nombre, Apellido, DNI) VALUES (%s, %s, %s)', (nuevo_nombre, nuevo_apellido, nuevo_dni))
+                cursor.execute('INSERT INTO Paciente (Nombre, Apellido, DNI) VALUES (%s, %s, %s);', (nuevo_nombre, nuevo_apellido, nuevo_dni))
                 conn.commit()
                 # Solicitamos el nuevo id_paciente para actualizar la tabla 'Turno'
                 cursor.execute('SELECT id_paciente FROM Paciente WHERE DNI = %s', (nuevo_dni,))
                 i = cursor.fetchone()
-                cursor.execute('UPDATE Turno SET Paciente_id_paciente = %s WHERE id_turno = %s', (i[0], c))
+                cursor.execute('UPDATE Turno SET Paciente_id_paciente = %s WHERE id_turno = %s;', (i[0], c))
                 conn.commit()
                 #FIN
                 print('Se ha actualizado el turno')
 
         # Si decide modificar la Especialidad, es un poco mas sencillo.    
         elif opcion == 2:
-            cursor.execute('SELECT id_especialidad, Nombre FROM Especialidad')
+            cursor.execute('SELECT id_especialidad, Nombre FROM Especialidad ORDER BY Nombre ASC;')
             especialidades = cursor.fetchall()
             print("Seleccione una nueva Área:")
 
@@ -94,13 +98,13 @@ def actualizar_turno():
                 except ValueError:
                     print("Por favor, ingrese un número.")
 
-            cursor.execute("SELECT id_especialidad FROM Especialidad WHERE Nombre = %s", (nueva_area,))
+            cursor.execute("SELECT id_especialidad FROM Especialidad WHERE Nombre = %s;", (nueva_area,))
             especialidad = cursor.fetchone()
 
             # Si bien, anteriormente compromabos la opción del usuario comparandola con la cantidad de especialidades
             #no está de mas hacer está comprobación. -> nunca se sabe cuando puede haberr un hueco en la DB
             if especialidad:
-                cursor.execute('UPDATE Turno SET Especialidad_id_especialidad = %s WHERE id_turno = %s', (especialidad[0], c))
+                cursor.execute('UPDATE Turno SET Especialidad_id_especialidad = %s WHERE id_turno = %s;', (especialidad[0], c))
                 conn.commit()
                 print(f'El área ha sido actualizada a {nueva_area}')
             else:

@@ -1,5 +1,4 @@
-from conectar_base_datos import conectar_base_datos
-
+from BD.conectar_base_datos import conectar_base_datos
 def eliminar_turno():
     conn = conectar_base_datos()
     cursor = conn.cursor()
@@ -18,7 +17,7 @@ def eliminar_turno():
             print("Código no válido. Por favor, ingrese un número.")
 
     # el ID del turno se utiliza para muchos támites -> en este caso, para borrar
-    cursor.execute('DELETE FROM Turno WHERE id_turno = %s', (c,))
+    cursor.execute('DELETE FROM Turno WHERE id_turno = %s;', (c,))
     conn.commit()
 
     if cursor.rowcount > 0:

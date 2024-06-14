@@ -1,5 +1,5 @@
 from consultas_generales.consulta_medicos import consulta_medicos
-from conectar_base_datos import conectar_base_datos
+from BD.conectar_base_datos import conectar_base_datos
 
 def opciones_avanzadas():
     conn = conectar_base_datos()
