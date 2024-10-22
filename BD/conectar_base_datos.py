@@ -4,7 +4,7 @@ from APLICACION.mysql import connector
 def conectar_base_datos():
     return connector.connect(
         host="localhost",
-        user="configured_mySQL_user",
-        password="configured_mySQL_password",
+        user="root",
+        password="1234",
         database="Turnero"
     )
